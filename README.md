@@ -165,6 +165,36 @@ System.out.println("Hello " + name + ", you are " + age + " years old!");
 
 <hr>
 
+<h2>Switch Cases</h2>
+
+```java
+public class Javaintro05{
+    public static void main(String[] args) {
+
+        int first = 5, second = 3, result = 0;
+        int param = 2;
+
+        switch(param){
+            case 1: result = first + second;
+                    System.out.println(result);
+                    break;
+
+            case 2: result = first - second;
+                    System.out.println(result);
+                    break;
+
+            case 3: result = first * second;
+                    System.out.println(result);
+                    break;
+
+            default: System.out.println("ERROR");
+                     break;
+
+        }
+    }
+}
+```
+
 <h2>🧠 Basic Structure of a Java Program</h2>
 
 ```java
