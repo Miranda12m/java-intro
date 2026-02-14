@@ -105,6 +105,12 @@ if (score >= 90) {
 
 ## 🔁 Loops
 
+for - you know how many times to loop
+
+while - you don't know how many times to loop
+
+do while - loop at least once
+
 ### For Loop
 ```java
 for (int i = 0; i < 5; i++) {
