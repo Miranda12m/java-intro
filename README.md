@@ -4,6 +4,16 @@
 
 <hr>
 
+<h2>🧠 Basic Structure of a Java Program</h2>
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, Java!");
+    }
+}
+```
+
 <h2>🖨️ Printing (Output)</h2>
 
 ```java
@@ -201,14 +211,132 @@ public class Javaintro05{
 }
 ```
 
-<h2>🧠 Basic Structure of a Java Program</h2>
+<h2>1️⃣ length() Method</h2>
+
+<p>
+The <b>length()</b> method is used to find how many characters are inside a String.
+It counts every character, including spaces.
+</p>
+
+<h3>Simple Example:</h3>
+
+<p>
+If we have:
+</p>
+
+
+<p>Everything here can be used as a reference for writing simple Java programs, learning basic syntax, and practicing with inputs.</p>
 
 ```java
-public class Main {
+String name = "Michael";
+```
+
+<p>
+The word <b>Michael</b> has 7 characters.
+</p>
+
+<h3>Java Code Example:</h3>
+
+```java
+public class LengthExample {
+
     public static void main(String[] args) {
-        System.out.println("Hello, Java!");
+
+        String name = "Michael";
+
+        int totalCharacters = name.length();
+
+        System.out.println("The word is: " + name);
+        System.out.println("Number of characters: " + totalCharacters);
     }
 }
 ```
 
-<p>Everything here can be used as a reference for writing simple Java programs, learning basic syntax, and practicing with inputs.</p>
+<h3>Result: The word is: Michael <br>  Number of characters: 7</h3>
+
+<br>
+
+<hr>
+
+<h2>2️⃣ substring() Method</h2>
+
+<p>
+The <b>substring()</b> method is used to extract (cut out) part of a String.
+</p>
+
+<p>
+Important:
+Java starts counting from <b>0</b>.
+This is called <b>index</b>.
+
+<p>
+Example word:
+</p>
+
+```bash
+H  e  l  l  o
+0  1  2  3  4
+```
+
+<h3>Example 1: substring(startIndex)</h3>
+
+<p>
+It starts from the position you give and goes to the end.
+</p>
+
+```java
+public class SubstringExample1 {
+
+    public static void main(String[] args) {
+
+        String word = "Hello";
+
+        String result = word.substring(2);
+
+        System.out.println("Original word: " + word);
+        System.out.println("Substring from index 2: " + result);
+    }
+}
+```
+
+<p>
+Output:
+<br>
+llo
+</p>
+
+<br>
+
+<hr>
+
+<h3>Example 2: substring(startIndex, endIndex)</h3>
+
+<p>
+It starts at <b>startIndex</b> and stops BEFORE <b>endIndex</b>.
+The end index is NOT included.
+</p>
+
+```java
+public class SubstringExample2 {
+
+    public static void main(String[] args) {
+
+        String word = "Hello";
+
+        String result = word.substring(1, 4);
+
+        System.out.println("Original word: " + word);
+        System.out.println("Substring from index 1 to 4: " + result);
+    }
+}
+```
+
+<p>
+Output:
+<br>
+ell
+</p>
+
+<br>
+
+<hr>
